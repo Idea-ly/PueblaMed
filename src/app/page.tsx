@@ -399,7 +399,7 @@ export default function Home() {
                     <IconBadge />
                   </div>
                   <div className="stat-title text-xs font-semibold uppercase text-slate-500">Espacios</div>
-                  <div className="stat-value text-emerald-600 text-3xl font-extrabold">16–28</div>
+                  <div className="stat-value text-emerald-600 text-3xl font-extrabold">23–28</div>
                   <div className="stat-desc text-slate-500 font-medium text-xs">Metros cuadrados</div>
                 </div>
               </div>
@@ -420,10 +420,13 @@ export default function Home() {
                 <h2 className={`section-title ${styles.titleLight}`}>Renta tu consultorio desde</h2>
                 <div className="flex items-baseline gap-3 my-4">
                   <span className="text-5xl sm:text-6xl font-black text-white tracking-tight">{site.price}</span>
-                  <div className="badge badge-accent badge-lg font-bold">MXN + IVA</div>
+                  <div className="badge badge-accent badge-lg font-bold">MXN + IVA al mes</div>
+                </div>
+                <div className="inline-block bg-white/10 text-cyan-300 font-semibold text-xs px-3 py-1.5 rounded-full mb-3 border border-cyan-400/30">
+                  🎁 Promoción de apertura: Primeros 6 meses de mantenimiento incluidos
                 </div>
                 <p className={styles.pricingNote}>
-                  Costos accesibles sin sacrificar calidad ni imagen institucional. Pregúntanos por la disponibilidad de consultorios y el esquema que mejor se adapta a tus horarios.
+                  Opciones amuebladas y sin amueblar (23 a 28 m²). Opciones de Consultorio 1 ($8,000 + IVA) y Consultorio 2 ($9,100 + IVA) con contrato anual para profesionales con cédula.
                 </p>
                 <div className={styles.pricingActions}>
                   <a id="price-whatsapp" href={waLink("Hola, me interesa conocer los planes de renta de consultorios en PueblaMed Atlixco.")} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
@@ -445,6 +448,18 @@ export default function Home() {
                       {title}
                     </li>
                   ))}
+                  <li>
+                    <span>
+                      <IconBuilding />
+                    </span>
+                    Elevador y acceso a áreas comunes
+                  </li>
+                  <li>
+                    <span>
+                      <IconCheck />
+                    </span>
+                    Farmacia dentro del complejo médico
+                  </li>
                 </ul>
               </div>
             </div>
@@ -458,55 +473,109 @@ export default function Home() {
               <span className="eyebrow">Dudas comunes</span>
               <h2 className="section-title">Preguntas frecuentes</h2>
               <p className="section-lead mx-auto">
-                Todo lo que necesitas saber antes de agendar tu cita y estrenar tu consultorio.
+                Respuestas claras sobre costos, servicios incluidos, horarios y requisitos para iniciar tu consulta médica en Atlixco.
               </p>
             </div>
 
             <div className="flex flex-col gap-3 reveal">
+              {/* FAQ 1: Tipos y medidas */}
               <div className="collapse collapse-plus bg-base-100 border border-slate-200/80 rounded-2xl shadow-sm">
                 <input type="radio" name="pueblamed-faq" defaultChecked />
-                <div className="collapse-title text-lg font-bold text-slate-800 pr-10">
-                  ¿Los consultorios están amueblados o listos para operar?
+                <div className="collapse-title text-base sm:text-lg font-bold text-slate-800 pr-10">
+                  ¿Qué consultorios tienen disponibles y de qué tamaño son?
                 </div>
                 <div className="collapse-content text-slate-600 text-sm leading-relaxed">
                   <p>
-                    Sí, contamos con espacios listos desde el primer día con escritorios, sillas para médico y pacientes, iluminación óptima y acabados médicos para que no requieras una gran inversión inicial.
+                    Contamos con consultorios completamente nuevos de <strong>23 a 28 m²</strong> aproximadamente. Ofrecemos opciones <strong>amuebladas</strong> (con escritorio, sillas ejecutivas y para pacientes) y <strong>sin amueblar</strong>, para que elijas la que mejor se adapte a tu especialidad e inversión.
                   </p>
                 </div>
               </div>
 
+              {/* FAQ 2: Costos y opciones */}
               <div className="collapse collapse-plus bg-base-100 border border-slate-200/80 rounded-2xl shadow-sm">
                 <input type="radio" name="pueblamed-faq" />
-                <div className="collapse-title text-lg font-bold text-slate-800 pr-10">
-                  ¿Qué servicios vienen incluidos en la renta mensual?
+                <div className="collapse-title text-base sm:text-lg font-bold text-slate-800 pr-10">
+                  ¿Cuánto cuesta la renta mensual?
                 </div>
                 <div className="collapse-content text-slate-600 text-sm leading-relaxed">
-                  <p>
-                    Incluye recepción y bienvenida de pacientes, limpieza continua de áreas comunes y consultorios, internet de alta velocidad, sala de espera climatizada y cómoda, estacionamiento para ti y tus pacientes, y circuito cerrado de vigilancia con seguridad.
+                  <p className="mb-2">
+                    Contamos con dos esquemas según las dimensiones y características de cada espacio:
+                  </p>
+                  <ul className="list-disc pl-5 space-y-1 mb-2">
+                    <li><strong>Consultorio 1:</strong> $8,000 + IVA mensuales.</li>
+                    <li><strong>Consultorio 2:</strong> $9,100 + IVA mensuales.</li>
+                  </ul>
+                  <p className="text-xs text-primary font-semibold">
+                    * Incluye promoción especial: los primeros 6 meses de cuota de mantenimiento van por nuestra cuenta.
                   </p>
                 </div>
               </div>
 
+              {/* FAQ 3: Qué incluye la renta */}
               <div className="collapse collapse-plus bg-base-100 border border-slate-200/80 rounded-2xl shadow-sm">
                 <input type="radio" name="pueblamed-faq" />
-                <div className="collapse-title text-lg font-bold text-slate-800 pr-10">
-                  ¿Puedo agendar una visita antes de tomar una decisión?
+                <div className="collapse-title text-base sm:text-lg font-bold text-slate-800 pr-10">
+                  ¿Qué servicios y áreas incluye el pago de renta?
                 </div>
                 <div className="collapse-content text-slate-600 text-sm leading-relaxed">
                   <p>
-                    ¡Por supuesto! Puedes contactarnos por WhatsApp o llenar el formulario de contacto para coordinar una fecha y hora. Te daremos un recorrido guiado por todas las instalaciones y consultorios disponibles.
+                    Tu renta incluye el uso completo de tu consultorio privado, recepción de pacientes con personal calificado, cómoda sala de espera, elevador moderno, estacionamiento, limpieza, internet y seguridad. Además, el complejo médico cuenta con <strong>farmacia dentro de las instalaciones</strong> para mayor comodidad de tus pacientes.
                   </p>
                 </div>
               </div>
 
+              {/* FAQ 4: Horarios */}
               <div className="collapse collapse-plus bg-base-100 border border-slate-200/80 rounded-2xl shadow-sm">
                 <input type="radio" name="pueblamed-faq" />
-                <div className="collapse-title text-lg font-bold text-slate-800 pr-10">
-                  ¿Dónde están ubicados exactamente?
+                <div className="collapse-title text-base sm:text-lg font-bold text-slate-800 pr-10">
+                  ¿Qué horarios de consulta puedo utilizar? ¿Se atiende en fines de semana?
+                </div>
+                <div className="collapse-content text-slate-600 text-sm leading-relaxed">
+                  <p className="mb-2">
+                    Los horarios de servicio del complejo están diseñados para brindar la máxima cobertura a tus pacientes:
+                  </p>
+                  <ul className="list-disc pl-5 space-y-1">
+                    <li><strong>Lunes a viernes:</strong> 9:00 a.m. a 8:00 p.m.</li>
+                    <li><strong>Sábados:</strong> 9:00 a.m. a 4:00 p.m. (atención activa en fin de semana).</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* FAQ 5: Contrato y requisitos */}
+              <div className="collapse collapse-plus bg-base-100 border border-slate-200/80 rounded-2xl shadow-sm">
+                <input type="radio" name="pueblamed-faq" />
+                <div className="collapse-title text-base sm:text-lg font-bold text-slate-800 pr-10">
+                  ¿Hay contrato forzoso y qué requisitos se piden para ejercer?
                 </div>
                 <div className="collapse-content text-slate-600 text-sm leading-relaxed">
                   <p>
-                    Nos ubicamos en Blvd. Niños Héroes 1208 A, Col. La Alfonsina, Atlixco, Puebla (sobre el corredor comercial de fácil acceso vehicular y transporte).
+                    El contrato de arrendamiento se celebra por un plazo mínimo de <strong>1 año</strong>. Está dirigido a médicos especialistas, médicos generales y profesionales de la salud con <strong>título y cédula profesional</strong> vigente para garantizar los más altos estándares a nuestra comunidad médica.
+                  </p>
+                </div>
+              </div>
+
+              {/* FAQ 6: Promoción primeros 6 meses */}
+              <div className="collapse collapse-plus bg-base-100 border border-slate-200/80 rounded-2xl shadow-sm">
+                <input type="radio" name="pueblamed-faq" />
+                <div className="collapse-title text-base sm:text-lg font-bold text-slate-800 pr-10">
+                  ¿Hay promociones vigentes para nuevos médicos?
+                </div>
+                <div className="collapse-content text-slate-600 text-sm leading-relaxed">
+                  <p>
+                    ¡Sí! Actualmente contamos con la promoción de bienvenida donde los <strong>primeros 6 meses de mantenimiento están totalmente incluidos</strong> sin costo adicional para que arranques tu consulta con menor carga operativa.
+                  </p>
+                </div>
+              </div>
+
+              {/* FAQ 7: Ubicación y visita */}
+              <div className="collapse collapse-plus bg-base-100 border border-slate-200/80 rounded-2xl shadow-sm">
+                <input type="radio" name="pueblamed-faq" />
+                <div className="collapse-title text-base sm:text-lg font-bold text-slate-800 pr-10">
+                  ¿Dónde están ubicados y cómo puedo agendar una visita guiada?
+                </div>
+                <div className="collapse-content text-slate-600 text-sm leading-relaxed">
+                  <p>
+                    Nos encontramos en <strong>Blvd. Niños Héroes 1208 A, Col. La Alfonsina, Atlixco, Puebla</strong>. Puedes enviarnos un mensaje por WhatsApp o dejarnos tus datos en el formulario para agendar una visita personalizada y recorrer los consultorios físicos disponibles.
                   </p>
                 </div>
               </div>

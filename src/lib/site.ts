@@ -2,7 +2,7 @@
 export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://atlixco.pueblamed.com",
   name: "PueblaMed Atlixco",
-  price: "$3,500",
+  price: "$8,000",
   phoneDisplay: "222 324 74 65",
   phoneTel: "+522223247465",
   whatsapp: "522223247465",

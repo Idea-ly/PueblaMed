@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: "Renta de Consultorios Médicos en Atlixco | PueblaMed Atlixco",
   description:
-    "Renta tu consultorio médico en PueblaMed Atlixco desde $3,500 + IVA. Recepción, limpieza, internet, sala de espera, estacionamiento y seguridad incluidos. Listo para consultar desde el primer día.",
+    "Renta tu consultorio médico en PueblaMed Atlixco desde $8,000 + IVA. Consultorios nuevos amueblados y sin amueblar (23 a 28 m²), recepción, elevador, sala de espera, estacionamiento y farmacia dentro del complejo. Primeros 6 meses de mantenimiento incluidos.",
   keywords: [
     "renta de consultorios Atlixco",
     "consultorio médico en renta",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Renta de Consultorios Médicos en Atlixco | PueblaMed",
     description:
-      "Consultorios equipados, servicios incluidos y una comunidad médica consolidada. Desde $3,500 + IVA.",
+      "Consultorios médicos nuevos de 23 a 28 m² en PueblaMed Atlixco. Desde $8,000 + IVA con 6 meses de mantenimiento incluidos.",
     locale: "es_MX",
     type: "website",
     images: ["/og.jpg"],
