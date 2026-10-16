@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     images: ["/og.jpg"],
   },
   alternates: { canonical: "/" },
+  icons: {
+    icon: [
+      { url: "/img/favicon.png", type: "image/png" },
+      { url: "/favicon.ico" }
+    ],
+    shortcut: "/img/favicon.png",
+    apple: "/img/favicon.png",
+  },
 };
 
 export const viewport: Viewport = {
