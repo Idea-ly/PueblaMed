@@ -42,6 +42,7 @@ import recepcion2 from "@/assets/img/recepcion-2.webp";
 import lobby from "@/assets/img/lobby.webp";
 import estacionamiento from "@/assets/img/estacionamiento.webp";
 import acceso from "@/assets/img/acceso.webp";
+import complejoExterior from "@/assets/img/complejo-exterior.webp";
 
 /* ---------- Contenido (presentación "Renta consultorios Atlixco") ---------- */
 
@@ -93,16 +94,18 @@ const podras = [
 ];
 
 const galeria: GalleryItem[] = [
+  { src: fachada, alt: "Fachada exterior del edificio PueblaMed Atlixco de día", label: "Fachada PueblaMed" },
+  { src: edificioNoche, alt: "Edificio de PueblaMed Atlixco iluminado de noche", label: "PueblaMed de noche" },
   { src: consultorio1, alt: "Consultorio amueblado con escritorio de madera, sillas y libreros", label: "Consultorio equipado" },
-  { src: recepcion1, alt: "Recepción con mostrador iluminado de PueblaMed Grupo Médico", label: "Recepción" },
+  { src: recepcion1, alt: "Recepción con mostrador iluminado y elevador", label: "Recepción y elevador" },
   { src: consultorio2, alt: "Escritorio de consultorio con sillas para pacientes", label: "Área de consulta" },
-  { src: letreroNoche, alt: "Letrero iluminado de PueblaMed Grupo Médico de noche", label: "PueblaMed Atlixco" },
   { src: consultorio3, alt: "Consultorio con ventanal y luz natural", label: "Luz natural" },
-  { src: estacionamiento, alt: "Estacionamiento frente al edificio de PueblaMed", label: "Estacionamiento" },
-  { src: recepcion2, alt: "Recepción y elevador del edificio", label: "Elevador y recepción" },
-  { src: consultorio4, alt: "Consultorio con lavabo y mobiliario moderno", label: "Mobiliario moderno" },
-  { src: lobby, alt: "Vestíbulo de acceso con recepción y escaleras", label: "Vestíbulo" },
-  { src: acceso, alt: "Acceso principal con fachada de madera y logotipo PueblaMed", label: "Acceso principal" },
+  { src: lobby, alt: "Vestíbulo de acceso con módulo de atención y escaleras", label: "Vestíbulo de acceso" },
+  { src: estacionamiento, alt: "Estacionamiento privado frente al edificio de PueblaMed", label: "Estacionamiento" },
+  { src: acceso, alt: "Acceso principal con fachada arquitectónica y logotipo PueblaMed", label: "Acceso principal" },
+  { src: letreroNoche, alt: "Letrero iluminado de PueblaMed Grupo Médico al anochecer", label: "Entrada principal" },
+  { src: complejoExterior, alt: "Complejo comercial y médico con Farmacia Fleming", label: "Farmacia y complejo" },
+  { src: consultorio4, alt: "Consultorio con mobiliario moderno y acabados de primera", label: "Mobiliario moderno" },
 ];
 
 /* ---------- Página ---------- */
